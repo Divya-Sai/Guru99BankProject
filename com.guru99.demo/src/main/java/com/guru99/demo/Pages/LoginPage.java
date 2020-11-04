@@ -17,6 +17,9 @@ public class LoginPage {
 
 	@FindBy(xpath=".//input[@name='btnLogin']")
 	public WebElement btnLogin;
+	
+	@FindBy(xpath="//td[contains(text(),'Manger Id :')]")
+	public WebElement ManagerID;
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -35,5 +38,8 @@ public class LoginPage {
 		btnLogin.click();
 	}
 
+	public void getManagerID() {
+		System.out.println(ManagerID.getText());
+	}
 
 }

@@ -10,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.guru99.demo.Pages.LoginPage;
+import com.guru99.demo.library.ExcelAPI;
 import com.guru99.demo.library.ReadConfigFile;
 
 public class Guru99BankTestSS2 {
@@ -17,6 +18,7 @@ public class Guru99BankTestSS2 {
 	LoginPage login;
 	WebDriver driver;
 	ReadConfigFile configfile;
+	ExcelAPI excelreader;
 
 	@Test(priority=1)
 	public void launchBrowser() throws IOException, InterruptedException {
@@ -31,11 +33,14 @@ public class Guru99BankTestSS2 {
 
 	//Enter Invalid UserId and Valid Password
 	@Test(priority=2)
-	public void enterInVaildUserDetails() throws InterruptedException {
+	public void enterInVaildUserDetails() throws Exception {
 		login = new LoginPage(driver);
-
-		login.enterUserId("mngr29213D");
-		login.enterPassword("pyhagEh");
+		excelreader = new ExcelAPI("Guru99Bank");
+		
+		login.enterUserId(excelreader.getCellData("Credentials", "UserID", 3));
+		login.enterPassword(excelreader.getCellData("Credentials", "Password", 3));
+		//login.enterUserId("mngr29213D");
+		//login.enterPassword("pyhagEh");
 		Thread.sleep(5000);
 		login.btnLogin.click();
 		/*

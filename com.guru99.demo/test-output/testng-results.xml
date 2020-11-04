@@ -2,46 +2,48 @@
 <testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-30T10:58:11 GMT" name="Default suite" finished-at="2020-10-30T10:58:34 GMT" duration-ms="23140">
+  <suite started-at="2020-11-04T10:34:17 GMT" name="Default suite" finished-at="2020-11-04T10:34:39 GMT" duration-ms="21946">
     <groups>
     </groups>
-    <test started-at="2020-10-30T10:58:11 GMT" name="Default test" finished-at="2020-10-30T10:58:34 GMT" duration-ms="23140">
-      <class name="verifyLoginSection.Guru99BankTestSS4">
-        <test-method signature="launchBrowser()[pri:1, instance:verifyLoginSection.Guru99BankTestSS4@355ce81c]" started-at="2020-10-30T10:58:11 GMT" name="launchBrowser" finished-at="2020-10-30T10:58:23 GMT" duration-ms="12137" status="PASS">
+    <test started-at="2020-11-04T10:34:17 GMT" name="Default test" finished-at="2020-11-04T10:34:39 GMT" duration-ms="21946">
+      <class name="verifyLoginSection.Guru99BankTestSS1">
+        <test-method is-config="true" signature="getExtentReports()[pri:0, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e]" started-at="2020-11-04T10:34:16 GMT" name="getExtentReports" finished-at="2020-11-04T10:34:17 GMT" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getExtentReports -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e]" started-at="2020-11-04T10:34:17 GMT" name="launchBrowser" finished-at="2020-11-04T10:34:28 GMT" duration-ms="11648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method signature="enterInVaildUserDetails()[pri:2, instance:verifyLoginSection.Guru99BankTestSS4@355ce81c]" started-at="2020-10-30T10:58:23 GMT" name="enterInVaildUserDetails" finished-at="2020-10-30T10:58:29 GMT" duration-ms="5855" status="PASS">
+        <test-method signature="enterVaildUserDetails()[pri:2, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e]" started-at="2020-11-04T10:34:28 GMT" name="enterVaildUserDetails" finished-at="2020-11-04T10:34:38 GMT" duration-ms="9336" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterInVaildUserDetails -->
-        <test-method signature="verifyTitle()[pri:3, instance:verifyLoginSection.Guru99BankTestSS4@355ce81c]" started-at="2020-10-30T10:58:29 GMT" name="verifyTitle" finished-at="2020-10-30T10:58:34 GMT" duration-ms="5083" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
+        </test-method> <!-- enterVaildUserDetails -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e]" started-at="2020-11-04T10:34:38 GMT" name="getResult" finished-at="2020-11-04T10:34:38 GMT" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=enterVaildUserDetails status=SUCCESS method=Guru99BankTestSS1.enterVaildUserDetails()[pri:2, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="verifyTitle()[pri:3, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e]" started-at="2020-11-04T10:34:38 GMT" name="verifyTitle" finished-at="2020-11-04T10:34:38 GMT" duration-ms="23" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=86.0.4240.111): User or Password is not valid
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'SAIBHASKAR-PC', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ssaib\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ed98821cce00dddb0b2cec4d4ac7d2c3]]>
+              <![CDATA[expected [false] but found [true]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=86.0.4240.111): User or Password is not valid
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'SAIBHASKAR-PC', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ssaib\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ed98821cce00dddb0b2cec4d4ac7d2c3
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-at verifyLoginSection.Guru99BankTestSS4.verifyTitle(Guru99BankTestSS4.java:53)
+              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at verifyLoginSection.Guru99BankTestSS1.verifyTitle(Guru99BankTestSS1.java:102)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -72,11 +74,45 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyTitle -->
-      </class> <!-- verifyLoginSection.Guru99BankTestSS4 -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e]" started-at="2020-11-04T10:34:38 GMT" name="getResult" finished-at="2020-11-04T10:34:38 GMT" duration-ms="9" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyTitle status=FAILURE method=Guru99BankTestSS1.verifyTitle()[pri:3, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method signature="verifyManagerID()[pri:4, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e]" started-at="2020-11-04T10:34:38 GMT" name="verifyManagerID" finished-at="2020-11-04T10:34:38 GMT" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManagerID -->
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e]" started-at="2020-11-04T10:34:38 GMT" name="getResult" finished-at="2020-11-04T10:34:38 GMT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyManagerID status=SUCCESS method=Guru99BankTestSS1.verifyManagerID()[pri:4, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e]" started-at="2020-11-04T10:34:38 GMT" name="CloseBrowser" finished-at="2020-11-04T10:34:39 GMT" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:verifyLoginSection.Guru99BankTestSS1@34f5090e]" started-at="2020-11-04T10:34:39 GMT" name="tearDown" finished-at="2020-11-04T10:34:39 GMT" duration-ms="413" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- verifyLoginSection.Guru99BankTestSS1 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

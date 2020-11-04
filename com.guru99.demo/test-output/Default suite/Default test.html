@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>2/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Oct 30 10:58:11 GMT 2020</td>
+<td>Started on:</td><td>Wed Nov 04 10:34:17 GMT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>23 seconds (23140 ms)</td>
+<tr><td>Total time:</td><td>21 seconds (21946 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,22 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='verifyLoginSection.Guru99BankTestSS4.verifyTitle()'><b>verifyTitle</b><br>Test class: verifyLoginSection.Guru99BankTestSS4</td>
-<td><div><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=86.0.4240.111): User or Password is not valid
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;SAIBHASKAR-PC&apos;, ip: &apos;192.168.1.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ssaib\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ed98821cce00dddb0b2cec4d4ac7d2c3
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at verifyLoginSection.Guru99BankTestSS4.verifyTitle(Guru99BankTestSS4.java:53)
+<td title='verifyLoginSection.Guru99BankTestSS1.verifyTitle()'><b>verifyTitle</b><br>Test class: verifyLoginSection.Guru99BankTestSS1</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at verifyLoginSection.Guru99BankTestSS1.verifyTitle(Guru99BankTestSS1.java:102)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,22 +112,15 @@ Session ID: ed98821cce00dddb0b2cec4d4ac7d2c3
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace102103410", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace102103410'><pre>org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : User or Password is not valid}
-  (Session info: chrome=86.0.4240.111): User or Password is not valid
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;SAIBHASKAR-PC&apos;, ip: &apos;192.168.1.110&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 86.0.4240.111, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\ssaib\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59862}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: ed98821cce00dddb0b2cec4d4ac7d2c3
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:281)
-	at verifyLoginSection.Guru99BankTestSS4.verifyTitle(Guru99BankTestSS4.java:53)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1833343025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1833343025'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at verifyLoginSection.Guru99BankTestSS1.verifyTitle(Guru99BankTestSS1.java:102)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -164,8 +150,8 @@ Session ID: ed98821cce00dddb0b2cec4d4ac7d2c3
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>5</td>
-<td>verifyLoginSection.Guru99BankTestSS4@355ce81c</td></tr>
+<td>0</td>
+<td>verifyLoginSection.Guru99BankTestSS1@34f5090e</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -175,15 +161,15 @@ Session ID: ed98821cce00dddb0b2cec4d4ac7d2c3
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='verifyLoginSection.Guru99BankTestSS4.enterInVaildUserDetails()'><b>enterInVaildUserDetails</b><br>Test class: verifyLoginSection.Guru99BankTestSS4</td>
+<td title='verifyLoginSection.Guru99BankTestSS1.enterVaildUserDetails()'><b>enterVaildUserDetails</b><br>Test class: verifyLoginSection.Guru99BankTestSS1</td>
 <td></td>
-<td>5</td>
-<td>verifyLoginSection.Guru99BankTestSS4@355ce81c</td></tr>
+<td>9</td>
+<td>verifyLoginSection.Guru99BankTestSS1@34f5090e</td></tr>
 <tr>
-<td title='verifyLoginSection.Guru99BankTestSS4.launchBrowser()'><b>launchBrowser</b><br>Test class: verifyLoginSection.Guru99BankTestSS4</td>
+<td title='verifyLoginSection.Guru99BankTestSS1.verifyManagerID()'><b>verifyManagerID</b><br>Test class: verifyLoginSection.Guru99BankTestSS1</td>
 <td></td>
-<td>12</td>
-<td>verifyLoginSection.Guru99BankTestSS4@355ce81c</td></tr>
+<td>0</td>
+<td>verifyLoginSection.Guru99BankTestSS1@34f5090e</td></tr>
 </table><p>
 </body>
 </html>
